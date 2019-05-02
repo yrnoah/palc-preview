@@ -1,2 +1,0 @@
-# palc-preview
-palc-preview
