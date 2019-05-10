@@ -12,14 +12,14 @@
       opacity: 0
     }
   </style>
-<link href="css/styles.bdfa846910509037da45.css" rel="stylesheet"></head>
+<link href="css/styles.2e2e3af29775aed50d58.css" rel="stylesheet"></head>
 <body>
 <header id="header" class="waiting-loading">
   <img src="images/Icon_logos.png" alt="logo" class="header-logo"/>
   <div class="header-right">
     <div>
       <p>Please select your language</p>
-      <p>
+      <p class="language-container">
         <a href="#"><span>ENG /</span></a>
         <a href="#"><span>简中 /</span></a>
         <a href="#"><span>IND /</span></a>
@@ -49,7 +49,7 @@
           <a href="./bio.html" class="" id="tab-bio">Speakers’ Bio</a>
         </li>
         <li class="tab col s2">
-          <a href="./info.html" class="" id="tab-import-info">Important Information</a>
+          <a href="./info.html" class="" id="tab-import-info">Important Info</a>
         </li>
       </ul>
       <div class="mobile-nav-wrapper">
@@ -78,7 +78,7 @@
           <a href="./bio.html">Speakers’ Bio</a>
         </li>
         <li class="tab col s12">
-          <a href="./info.html">Important<br/>Information</a>
+          <a href="./info.html">Important<br/>Info</a>
         </li>
         <li class="tab col s12">
           <div class="nav-line"></div>
@@ -104,12 +104,6 @@
         <div class="home-detail itinerary-detail">
           <div class="itinerary-header">
             <h1>Your Itinerary</h1>
-            <div class="itinerary-tab-buttons">
-              <p class="itinerary-tab-button" data-id="1">Day1</p>
-              <p class="itinerary-tab-button" data-id="2">Day2</p>
-              <p class="itinerary-tab-button" data-id="3">Day3</p>
-              <p class="itinerary-tab-button" data-id="4">Day4</p>
-            </div>
           </div>
           <table class="striped itinerary-table">
             <thead>
@@ -122,7 +116,9 @@
             <tbody>
             <tr>
               <td>
-                <b>Day 1</b>
+                <div class="itinerary-tab-buttons table">
+                  <p class="itinerary-tab-button active" data-id="1">Day1</p>
+                </div>
                 <p>Thursday 29th August</p>
               </td>
               <td>Arrivals</td>
@@ -130,7 +126,9 @@
             </tr>
             <tr>
               <td>
-                <b>Day 2</b>
+                <div class="itinerary-tab-buttons table">
+                  <p class="itinerary-tab-button" data-id="2">Day2</p>
+                </div>
                 <p>Friday 30th August</p>
               </td>
               <td>Full-day Business Meeting</td>
@@ -138,7 +136,9 @@
             </tr>
             <tr>
               <td>
-                <b>Day 3</b>
+                <div class="itinerary-tab-buttons table">
+                  <p class="itinerary-tab-button active" data-id="3">Day3</p>
+                </div>
                 <p>Saturday 31st August</p>
               </td>
               <td>Half-day Business Meeting</td>
@@ -146,7 +146,9 @@
             </tr>
             <tr>
               <td>
-                <b>Day 4</b>
+                <div class="itinerary-tab-buttons table">
+                  <p class="itinerary-tab-button" data-id="4">Day4</p>
+                </div>
                 <p>Sunday 1st September</p>
               </td>
               <td>Departures</td>
@@ -164,7 +166,9 @@
             <tbody>
             <tr>
               <td>
-                <b>Day 1</b>
+                <div class="itinerary-tab-buttons table">
+                  <p class="itinerary-tab-button active" data-id="1">Day1</p>
+                </div>
                 <p>Thursday 29th August</p>
               </td>
               <td>
@@ -176,7 +180,9 @@
             </tr>
             <tr>
               <td>
-                <b>Day 2</b>
+                <div class="itinerary-tab-buttons table">
+                  <p class="itinerary-tab-button" data-id="2">Day2</p>
+                </div>
                 <p>Friday 30th August</p>
               </td>
               <td>
@@ -188,7 +194,9 @@
             </tr>
             <tr>
               <td>
-                <b>Day 3</b>
+                <div class="itinerary-tab-buttons table">
+                  <p class="itinerary-tab-button active" data-id="3">Day3</p>
+                </div>
                 <p>Saturday 31st August</p>
               </td>
               <td>
@@ -200,7 +208,9 @@
             </tr>
             <tr>
               <td>
-                <b>Day 4</b>
+                <div class="itinerary-tab-buttons table">
+                  <p class="itinerary-tab-button" data-id="4">Day4</p>
+                </div>
                 <p>Sunday 1st September</p>
               </td>
               <td>Departures</td>
@@ -243,7 +253,7 @@
               <p class="itinerary-tab-button" data-id="4">Day4</p>
             </div>
           </div>
-          <p>
+          <p style="margin-bottom: 40px">
             The welcome reception has been arranged on this evening at a location a place far above the ordinary; where
             eating, drinking and beautiful views combine for the ultimate high. O bar is located on the 47th floor of
             Australia Square. The restaurant turns constantly to reveal an ever-unfolding, 360-degree panorama and
@@ -255,8 +265,8 @@
             6:30pm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meet at Hotel Lobby for transfer to
             Welcome Reception
           </p>
-          <p style="font-weight: bold;">Dress code:&nbsp;&nbsp;&nbsp;Smart casual</p>
-          <i>* Note: Please refer to the PALC2019 Event App for final arrangements. </i>
+          <p style="font-weight: bold;">Dress code:&nbsp;&nbsp;&nbsp;Smart Casual</p>
+          <i>* Note: Timings subject to minor adjustment. Please refer to the PALC2019 Event App for final arrangements.</i>
         </div>
       </div>
       <!--Itinerary day2-->
@@ -293,16 +303,16 @@
               <p class="itinerary-tab-button" data-id="4">Day4</p>
             </div>
           </div>
-          <p>
+          <p style="margin-bottom: 40px">
             The Business Meeting is a platform for you to exchange ideas and acquire knowledge with your fellow
             colleagues across the region. We have specially invited professional speakers to get you #FULLYENGAGED while
             providing more insights of the industry.
           </p>
-          <p style="font-weight: bold;">Day 2 – Friday 30th August</p>
-          <p style="font-weight: bold;">6:30am - 8:30am Breakfast</p>
-          <p style="font-weight: bold;">8:30am - 5:30pm Business Meeting in Grand Ballroom</p>
+          <p style="font-weight: bold;line-height: 1">6:30am - 8:00am Breakfast</p>
+          <p style="font-weight: bold;line-height: 1">8:00am - 5:30pm Business Meeting in Grand Ballroom</p>
+          <p style="font-weight: bold;margin-top: 30px">Dress code&nbsp;&nbsp;&nbsp;&nbsp;Business Casual with Business Meeting</p>
           <i>
-            *Note: Timings subject to minor adjustment. You may also refer to the programme app for final arrangements.
+            *Note: Timings subject to minor adjustment. Please refer to the PALC2019 Event App for final arrangements.
             <br/>
             *Please check the programme app for your specific breakfast, lunch and breakout location.
           </i>
@@ -312,7 +322,7 @@
         <img src="images/Icon_headline.png" alt="Icon_headline" class="icon-headline"/>
         <div class="home-detail itinerary-detail">
           <h1>Group Dinner<br/>Starship Sydney</h1>
-          <p>
+          <p style="margin-bottom: 40px">
             Starship Sydney is Sydney Harbour’s largest cruising glass vessel offering modern facilities, over three
             spacious, expertly planned entertaining levels. Includes 3 metre high surround glass windows on each
             enclosed level, unrestricted views and free flowing open spaces. The different pleasing space allows you to
@@ -323,9 +333,7 @@
             Lobby for transfer to Group Dinner</p>
           <p style="font-weight: bold;">Dress code&nbsp;&nbsp;&nbsp;&nbsp;Smart Casual</p>
           <i>
-            * Note: Timings subject to minor adjustment. You may also refer to the programme app for final arrangements.
-            <br/>
-            * Please check the programme app for your specific breakfast, lunch and breakout location.
+            * Note: Timings subject to minor adjustment. Please refer to the PALC2019 Event App for final arrangements.
           </i>
         </div>
       </div>
@@ -366,16 +374,15 @@
               <p class="itinerary-tab-button" data-id="4">Day4</p>
             </div>
           </div>
-          <p>
+          <p style="margin-bottom: 40px">
             The Business Meeting is a platform for you to exchange ideas and acquire knowledge with your fellow
             colleagues across the region. We have specially invited professional speakers to get you #FULLYENGAGED while
             providing more insights of the industry.
           </p>
-          <p style="font-weight: bold;">Day 3 – Saturday 31st August</p>
-          <p style="font-weight: bold;">6:30am - 8:30am Breakfast</p>
-          <p style="font-weight: bold;">8:30am - 5:30pm Business Meeting in Grand Ballroom</p>
+          <p style="font-weight: bold;line-height: 1">6:30am - 8:00am Breakfast</p>
+          <p style="font-weight: bold;line-height: 1">8:00am - 5:30pm Business Meeting in Grand Ballroom</p>
           <i>
-            *Note: Timings subject to minor adjustment. You may also refer to the programme app for final arrangements.
+            *Note: Timings subject to minor adjustment. Please refer to the PALC2019 Event App for final arrangements.
             <br/>
             *Please check the programme app for your specific breakfast, lunch and breakout location.
           </i>
@@ -444,5 +451,5 @@
     </div>
   </div>
 </section>
-<script type="text/javascript" src="js/itinerary.eacd66d6479c6757482a.js"></script></body>
+<script type="text/javascript" src="js/itinerary.471e002001e077f859f8.js"></script></body>
 </html>
