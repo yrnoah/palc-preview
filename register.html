@@ -12,12 +12,12 @@
       opacity: 0
     }
   </style>
-<link href="css/styles.79149e68df89c28232b5.css" rel="stylesheet"></head>
+<link href="css/styles.04c2be6b3062049e4861.css" rel="stylesheet"></head>
 <body>
 <section class="register-site waiting-loading">
   <img src="images/Image_homepage.png" alt="home-page" class="content-home-header"/>
   <!--login-->
-  <form class="login-container" id="login-form">
+  <form class="login-container" id="login-form" name="login">
     <h4>
       Welcome to the<br/>
       Prudential agency Leaders' Conference 2019<br/>
@@ -25,15 +25,32 @@
     </h4>
     <div class="register-input">
       <label class="small">Email:</label>
-      <input class="register-input-item" id="loginEmail"/>
+      <input class="register-input-item" id="loginEmail" type="email"/>
     </div>
     <div class="register-input">
       <label class="small">Password:</label>
-      <input class="register-input-item" id="loginPassword"/>
+      <input class="register-input-item" id="loginPassword" type="password"/>
     </div>
     <p class="tip">Please email palc2019@pruevent-asia.com if you have problems logging in.</p>
     <p class="tip err"></p>
-    <button class="waves-effect waves-light btn red btn-pre-login" type="submit">Login</button>
+    <button
+      class="waves-effect waves-light btn red btn-pre-login"
+      type="submit"
+      name="login"
+    >
+      <span id="login-text">Login</span>
+      <div class="preloader-wrapper small active hide" id="login-loading">
+        <div class="spinner-layer spinner-white-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+        </div>
+      </div>
+    </button>
   </form>
   <!--Terms and Conditions-->
   <div class="terms-container hide">
@@ -269,7 +286,7 @@
     </div>
   </div>
   <!-- personal info2 complete input-->
-  <div class="register-container info2 hide">
+  <form class="register-container info2 hide" id="register-form" name="register">
     <div class="register-indicators">
       <div class="indicator-icon active">
         <div class="tip">
@@ -295,7 +312,7 @@
     <div class="register-input">
       <label>No. of Time Qualify (2002 – 2019) :</label>
       <div class="input-field col s12">
-        <select id="info2-time-qualify">
+        <select id="info2-time-qualify" required>
           <option value="NA" selected>NA</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -332,7 +349,7 @@
         </p>
         <p>
           <label>
-            <input name="gender" type="radio" />
+            <input name="gender" type="radio" id="is-male"/>
             <span>Male</span>
           </label>
         </p>
@@ -341,7 +358,7 @@
     <div class="register-input">
       <label>Salutation: </label>
       <div class="input-field col s12">
-        <select id="info2-salutation">
+        <select id="info2-salutation" required>
           <option value="Mr" selected>Mr</option>
           <option value="Mrs">Mrs</option>
           <option value="Ms">Ms</option>
@@ -353,42 +370,42 @@
     </div>
     <div class="register-input">
       <label>Family Name:</label>
-      <input id="info2-family-name"/>
+      <input id="info2-family-name" required/>
     </div>
     <div class="register-input">
       <label>Given Name:</label>
-      <input id="info2-given-name"/>
+      <input id="info2-given-name" required/>
     </div>
     <div class="register-input">
       <label>Full Name:<br/>(for Certificate printing)</label>
-      <input id="info2-full-name"/>
+      <input id="info2-full-name" required/>
     </div>
     <div class="register-input">
       <label>Preferred Name on Name Badge:</label>
-      <input id="info2-preferred-name"/>
+      <input id="info2-preferred-name" required/>
     </div>
     <div class="register-input">
       <label>Nationality:</label>
-      <input id="info2-nationality"/>
+      <input id="info2-nationality" required/>
     </div>
     <div class="register-input">
       <label>Date of Birth:</label>
       <div class="info2-birth-container" style="position: relative">
-        <input type="text" class="datepicker" id="info2-birth">
+        <input type="text" class="datepicker" id="info2-birth" required>
       </div>
     </div>
     <div class="register-input">
       <label>Mobile No.:</label>
       <div class="info2-mobile-container">
-        <input id="info2-mobile-area" placeholder="area">
-        <input id="info2-mobile-country" placeholder="country">
-        <input id="info2-mobile-no" placeholder="phone no">
+        <input id="info2-mobile-country" placeholder="country" required>
+        <input id="info2-mobile-area" placeholder="area" required>
+        <input id="info2-mobile-no" placeholder="phone no" required>
       </div>
     </div>
     <div class="register-input">
       <label>T-shirt Size: </label>
       <div class="input-field col s12">
-        <select id="info2-t-shirt-size">
+        <select id="info2-t-shirt-size" required>
           <option value="F – S" selected>F – S</option>
           <option value="F – M">F – M</option>
           <option value="F – L">F – L</option>
@@ -406,17 +423,17 @@
     <div class="register-input">
       <label>Dietary Requirement: </label>
       <div class="input-field col s12">
-        <select id="info2-dietary">
-          <option value="Normal " selected>Normal</option>
+        <select id="info2-dietary" required>
+          <option value="Normal" selected>Normal</option>
           <option value="Halal">Halal</option>
           <option value="Vegetarian">Vegetarian</option>
           <option value="No beef">No beef</option>
           <option value="No Seafood">No Seafood</option>
-          <option value="Other (please specify below)">Other (please specify below)</option>
+          <option value="Other">Other (please specify below)</option>
         </select>
       </div>
     </div>
-    <div class="register-input">
+    <div class="register-input hide" id="register-other-dietary">
       <label>Other Dietary:</label>
       <input id="info2-other-dietary"/>
     </div>
@@ -435,7 +452,7 @@
         </p>
         <p>
           <label>
-            <input name="mert" type="radio" />
+            <input name="mert" type="radio" id="not-attending"/>
             <span>No</span>
           </label>
         </p>
@@ -452,7 +469,7 @@
         </p>
         <p>
           <label>
-            <input name="transfer" type="radio" />
+            <input name="transfer" type="radio" id="not-transfer"/>
             <span>No</span>
           </label>
         </p>
@@ -460,9 +477,15 @@
     </div>
     <div class="action-buttons">
       <a class="waves-effect waves-light btn red btn-back-to-person-info1">Back</a>
-      <a class="waves-effect waves-light btn red btn-go-review">Next</a>
+      <button
+        class="waves-effect waves-light btn red btn-go-review"
+        type="submit"
+        name="register"
+      >
+        Next
+      </button>
     </div>
-  </div>
+  </form>
   <!-- info2 review-->
   <div class="register-container review hide">
     <div class="register-indicators">
@@ -535,7 +558,7 @@
       <label>Dietary Requirement: </label>
       <input readonly id="review-dietary"/>
     </div>
-    <div class="register-input">
+    <div class="register-input hide" id="review-other-die-container">
       <label>Other Dietary:</label>
       <input readonly id="review-other-dietary"/>
     </div>
@@ -560,7 +583,20 @@
     <p class="tip register err"></p>
     <div class="action-buttons">
       <a class="waves-effect waves-light btn red btn-back-to-person-info2">Back</a>
-      <a class="waves-effect waves-light btn red btn-submit-register">Submit</a>
+      <a class="waves-effect waves-light btn red btn-submit-register">
+        <span id="register-text">Submit</span>
+        <div class="preloader-wrapper small active hide" id="register-loading">
+          <div class="spinner-layer spinner-white-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
   <!-- complete-->
@@ -594,6 +630,11 @@
     <p style="margin-bottom: 50px">For any requires, please email palc2019@pruevent-asia.com</p>
   </div>
 </section>
+<footer class="waiting-loading">
+  <div>Follow us:&nbsp;&nbsp;<a href="#"><img alt="follow" src="images/Icon_facebook.png"/></a>
+  </div>
+  <p>Copyright @ 2019. Prudential Agency Leaders’ Conference. All rights reserved.</p>
+</footer>
 <section id="main-loading">
   <div class="preloader-wrapper big active">
     <div class="spinner-layer spinner-red-only">
@@ -609,5 +650,5 @@
     </div>
   </div>
 </section>
-<script type="text/javascript" src="js/register.eab61a4cdbb83106f6e6.js"></script></body>
+<script type="text/javascript" src="js/register.a42c91ec3c7bddaab2e6.js"></script></body>
 </html>
