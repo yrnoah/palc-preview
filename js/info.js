@@ -1,2 +1,154 @@
-!function(e){var n={};function t(o){if(n[o])return n[o].exports;var i=n[o]={i:o,l:!1,exports:{}};return e[o].call(i.exports,i,i.exports,t),i.l=!0,i.exports}t.m=e,t.c=n,t.d=function(e,n,o){t.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:o})},t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t.t=function(e,n){if(1&n&&(e=t(e)),8&n)return e;if(4&n&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(t.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&n&&"string"!=typeof e)for(var i in e)t.d(o,i,function(n){return e[n]}.bind(null,i));return o},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},t.p="",t(t.s=6)}({0:function(e,n,t){},6:function(e,n,t){"use strict";function o(){$("#main-loading").addClass("hide"),$(".waiting-loading").removeClass("waiting-loading")}t(0),document.addEventListener("DOMContentLoaded",function(){var e=null;(e=M.Carousel.init($(".carousel.carousel-slider.info"),{fullWidth:!0}))&&setInterval(function(){e[0].next()},5e3);var n,t,i=document.querySelectorAll(".collapsible");M.Collapsible.init(i,{accordion:!1});$(".btn-open-nav-menu").click(function(){$(".mobile-nav-list").hasClass("open")?$(".mobile-nav-list").removeClass("open"):$(".mobile-nav-list").addClass("open")}),t={},(n=["./assest/Icon_logos.png","./assest/Icon_headline.png","./assest/Image_Info_1.png","./assest/Image_Info_2.png","./assest/Image_Info_3.png","./assest/Image_Info_4.png","./assest/Image_Info_5.png"]).forEach(function(e){var i=new Image;i.onload=function(){t[e]=!0,Object.keys(t).length===n.length&&o()},i.onerror=function(){t[e]=!1,Object.keys(t).length===n.length&&o()},i.src=e})})}});
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ 0:
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ 6:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(0);
+
+document.addEventListener('DOMContentLoaded', function () {
+  var infoCarousel = null;
+  infoCarousel = M.Carousel.init($('.carousel.carousel-slider.info'), {
+    fullWidth: true
+  });
+  if (infoCarousel) {
+    setInterval(function () {
+      infoCarousel[0].next();
+    }, 5000);
+  }
+  // init information collapsible
+  var collapsibleElems = document.querySelectorAll('.collapsible');
+  var collapsibleInstances = M.Collapsible.init(collapsibleElems, {
+    accordion: false
+  });
+  $('.btn-open-nav-menu').click(function () {
+    if ($('.mobile-nav-list').hasClass('open')) {
+      $('.mobile-nav-list').removeClass('open');
+    } else {
+      $('.mobile-nav-list').addClass('open');
+    }
+  });
+  preloadImages();
+});
+
+function preloadImages() {
+  var arr = ['./images/Icon_logos.png', './images/Icon_headline.png', './images/Image_Info_1.png', './images/Image_Info_2.png', './images/Image_Info_3.png', './images/Image_Info_4.png', './images/Image_Info_5.png'];
+  var result = {};
+  arr.forEach(function (url) {
+    var image = new Image();
+    image.onload = function () {
+      result[url] = true;
+      if (Object.keys(result).length === arr.length) finishMainLoading();
+    };
+    image.onerror = function () {
+      result[url] = false;
+      if (Object.keys(result).length === arr.length) finishMainLoading();
+    };
+    image.src = url;
+  });
+}
+
+function finishMainLoading() {
+  $('#main-loading').addClass('hide');
+  $('.waiting-loading').removeClass('waiting-loading');
+}
+
+/***/ })
+
+/******/ });
 //# sourceMappingURL=info.js.map
